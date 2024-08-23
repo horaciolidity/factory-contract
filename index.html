@@ -16,47 +16,46 @@
 }
 
 body {
-    background-color: #0D0F24;
-    color: #FFFFFF;
+    background-color: #0d0f24;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    overflow: hidden;
 }
 
 .container {
     width: 90%;
     max-width: 1200px;
+    margin: auto;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
-    background-color: #101228;
+    padding: 20px 0;
     border-bottom: 1px solid #333;
 }
 
 .nav h1 {
     font-size: 24px;
-    color: #00FF85;
+    color: #00ff85;
     font-weight: bold;
 }
 
 .menu a {
     margin: 0 15px;
-    color: #FFFFFF;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
 
 .wallet button {
-    background-color: #00FF85;
+    background-color: #00ff85;
     border: none;
     padding: 10px 20px;
-    color: #000000;
+    color: #000;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
@@ -72,31 +71,31 @@ main {
     align-items: center;
 }
 
-.market-cap-ranking, .gainers-ranking {
+.card {
     width: 40%;
-    background-color: #14172B;
+    background-color: #1c2336;
     padding: 20px;
     border-radius: 10px;
 }
 
 h2 {
-    color: #00FF85;
-    font-size: 20px;
+    color: #00ff85;
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
 .token {
-    background-color: #101228;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    background-color: #0d1220;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .token span {
-    color: #FFFFFF;
+    color: #fff;
     font-weight: bold;
 }
 
@@ -110,32 +109,27 @@ h2 {
     text-align: left;
 }
 
-.token .market-cap {
+.token .market-cap, .token .progress, .token .gain {
     width: 20%;
     text-align: right;
-}
-
-.token .progress, .token .gain {
-    width: 20%;
-    text-align: right;
-    color: #00FF85;
 }
 
 .create-token-button {
-    width: 15%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: 0 20px;
 }
 
 .create-token-button button {
-    background-color: #00FF85;
+    background-color: #00ff85;
     border: none;
-    padding: 15px 20px;
-    color: #000000;
-    border-radius: 5px;
+    padding: 20px 40px;
+    color: #000;
+    border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
 }
 </style>
     <div class="container">
@@ -156,7 +150,7 @@ h2 {
 
         <main>
             <div class="rankings">
-                <div class="market-cap-ranking">
+                <div class="card market-cap-ranking">
                     <h2>Market Cap Ranking</h2>
                     <div class="token">
                         <span class="rank">1</span>
@@ -183,7 +177,7 @@ h2 {
                     <button>Create Token</button>
                 </div>
 
-                <div class="gainers-ranking">
+                <div class="card gainers-ranking">
                     <h2>24 Hours Gainers Ranking</h2>
                     <div class="token">
                         <span class="rank">1</span>
