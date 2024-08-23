@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0d0f24;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+.nav h1 {
+    font-size: 24px;
+    color: #00ff85;
+}
+
+.menu a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.wallet button {
+    background-color: #00ff85;
+    border: none;
+    padding: 10px 20px;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.ranking-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ranking {
+    width: 45%;
+    background-color: #1c2336;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.ranking h2 {
+    margin-bottom: 20px;
+    color: #00ff85;
+}
+
+.token {
+    background-color: #0d1220;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.token p {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.create-token button {
+    background-color: #00ff85;
+    border: none;
+    padding: 15px 30px;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+</style>
+    <div class="container">
+        <header>
+            <div class="nav">
+                <h1>FOUR</h1>
+                <div class="menu">
+                    <a href="#">Create Token</a>
+                    <a href="#">Airdrop</a>
+                    <a href="#">Competition</a>
+                </div>
+                <div class="wallet">
+                    <button>Connect Wallet</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="ranking-section">
+                <div class="ranking">
+                    <h2>Market Cap Ranking</h2>
+                    <div class="token">
+                        <p>1. BINANCE NEIRO</p>
+                        <p>$58,398,541</p>
+                        <p>96.734%</p>
+                    </div>
+                    <div class="token">
+                        <p>2. InvestZone</p>
+                        <p>$51,513,081</p>
+                        <p>94.362%</p>
+                    </div>
+                    <div class="token">
+                        <p>3. MEW-WOOF-DAO</p>
+                        <p>$50,568,616</p>
+                        <p>94.002%</p>
+                    </div>
+                    <!-- Add more tokens as needed -->
+                </div>
+
+                <div class="create-token">
+                    <button>Create Token</button>
+                </div>
+
+                <div class="ranking">
+                    <h2>24 Hours Gainers Ranking</h2>
+                    <div class="token">
+                        <p>1. BINANCE NEIRO</p>
+                        <p>$58,398,541</p>
+                        <p>+1,239.1%</p>
+                    </div>
+                    <div class="token">
+                        <p>2. Binance Andy</p>
+                        <p>$42,391,37</p>
+                        <p>+865.7%</p>
+                    </div>
+                    <div class="token">
+                        <p>3. Forky</p>
+                        <p>$32,996,635</p>
+                        <p>+664.5%</p>
+                    </div>
+                    <!-- Add more tokens as needed -->
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
