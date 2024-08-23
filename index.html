@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crypto Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Incluimos Google Fonts para tipografías similares -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <style>
@@ -12,7 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -38,13 +40,23 @@ header {
     border-bottom: 1px solid #333;
 }
 
-.nav h1 {
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.logo h1 {
     font-size: 24px;
     color: #00ff85;
     font-weight: bold;
 }
 
-.menu a {
+nav a {
     margin: 0 15px;
     color: #fff;
     text-decoration: none;
@@ -73,19 +85,21 @@ main {
 
 .card {
     width: 40%;
-    background-color: #1c2336;
+    background: linear-gradient(145deg, #1c2336, #232a4a);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
     color: #00ff85;
     font-size: 18px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .token {
-    background-color: #0d1220;
+    background-color: rgba(255, 255, 255, 0.05);
     padding: 15px;
     margin-bottom: 15px;
     border-radius: 10px;
@@ -130,21 +144,27 @@ h2 {
     cursor: pointer;
     font-weight: bold;
     font-size: 18px;
+    box-shadow: 0px 5px 15px rgba(0, 255, 133, 0.3);
 }
-</style>
+
+ </style>
+
+
+
     <div class="container">
         <header>
-            <div class="nav">
+            <div class="logo">
+                <img src="logo.png" alt="FOUR Logo">
                 <h1>FOUR</h1>
-                <div class="menu">
-                    <a href="#">Board</a>
-                    <a href="#">Create Token</a>
-                    <a href="#">Airdrop</a>
-                    <a href="#">Competition</a>
-                </div>
-                <div class="wallet">
-                    <button>Connect Wallet</button>
-                </div>
+            </div>
+            <nav>
+                <a href="#">Board</a>
+                <a href="#">Create Token</a>
+                <a href="#">Airdrop</a>
+                <a href="#">Competition</a>
+            </nav>
+            <div class="wallet">
+                <button>Connect Wallet</button>
             </div>
         </header>
 
@@ -160,7 +180,7 @@ h2 {
                     </div>
                     <div class="token">
                         <span class="rank">2</span>
-                        <span class="token-name">InvestZone</span>
+                        <span class="token-name">Invest Zone</span>
                         <span class="market-cap">$51,513,081</span>
                         <span class="progress">94.362%</span>
                     </div>
